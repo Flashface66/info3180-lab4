@@ -134,3 +134,10 @@ def get_image(filename):
 @login_required
 def files():
     return render_template("files.html", images=get_uploaded_images())
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('You have been logged out.', 'success')
+    return redirect(url_for('home'))

@@ -2,6 +2,25 @@ body {
     padding-top: 5rem;
 }
 
+.pic-gallery{
+    text-align: center;
+}
+
+.pic-list {
+    -webkit-columns: 3; /* for Safari and Chrome */
+    -moz-columns: 3; /* for Firefox */
+    columns: 3;
+    list-style: none;
+    list-style: none;
+  }
+
+  .pic-list li img {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+  }
+  
+
 .form-login {
     max-width: 330px;
     padding: 15px;
